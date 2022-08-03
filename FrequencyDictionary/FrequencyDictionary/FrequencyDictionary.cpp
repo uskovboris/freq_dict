@@ -31,7 +31,6 @@ namespace {
 			? ""
 			: fname.substr(0, pos);
 	}
-
 }
 
 void show_usage() {
