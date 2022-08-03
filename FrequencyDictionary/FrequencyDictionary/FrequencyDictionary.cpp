@@ -28,14 +28,13 @@ namespace {
 	std::string dirname(const std::string& fname) {
 		size_t pos = fname.find_last_of("\\/");
 		return (std::string::npos == pos)
-			? ""
+			? std::string()
 			: fname.substr(0, pos);
 	}
 
-}
-
-void show_usage() {
-	std::cout << "FrequencyDictionary <input file> <output file>" << std::endl;
+	void show_usage() {
+		std::cout << "FrequencyDictionary <input file> <output file>" << std::endl;
+	}
 }
 
 int main(int argc, char* argv[]) {
